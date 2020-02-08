@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Papel | Account</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- capturing google fonts-->
+
+     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400&display=swap" rel="stylesheet">
+
+  <!-- external libraries-->
+
+  <link rel="stylesheet" type="text/css" href="../../css/clients.css">
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        // simple script to generate account number
+
+        function generateAccountNumber(){
+
+            var numbers ='1234567890';
+            var sstr    = str_shuffle(numbers);
+            var generate = substr(sstr,0, 5);
+
+            console.log(generate);
+
+        }
+        
+
+
+    </script>
+
+
+<div class="header">
+<h1>Papel Cashier | Kalisa Joseph</h1>
+</div>
+
+<div class="row">
+<div class="col-3 col-m-3 menu">
+<ul>
+<li><a href="user.html">Home</a></li>
+<li><a href="user.html">Debit Account</a></li>
+<li><a href="credit.html">Credit Account</a></li>
+<li><a href="../../../index.html">Sign Out</a></li>
+</ul>
+</div>
+
+<div class="col-8 col-m-9" >
+<h1>Debit User Account</h1>
+<p>Withdraw Money from the User</p>
+
+    <div class="content">
+
+        <form method="post" autocomplete="off" action="user.html">
+
+
+        <div class="col-4 col-m-4" >    
+
+            <div class="form-grouping">
+
+        <label for="email">Account Number</label>
+
+        <input type="text"   placeholder="Ex: PAP-20---" >
+
+    </div>
+</div>
+
+<div class="col-4 col-m-4" >    
+
+            <div class="form-grouping">
+
+        <label for="email">withdrawing Date</label>
+
+        <input type="text" name="" placeholder="mm/dd/yyy" required="">
+
+    </div>
+</div>
+
+
+<div class="col-4 col-m-4" >    
+
+            <div class="form-grouping">
+
+        <label for="email">Withdraw Money From</label>
+
+        <select>
+            <option selected disabled>Choose Type</option>
+            <option>Saving Account</option>
+            <option>Blocked Account</option>
+            <option>Debit / Credit Account</option>
+            
+
+        </select>
+
+    </div>
+</div>
+
+<div class="col-4 col-m-4" >    
+
+            <div class="form-grouping">
+
+        <label for="email">Currency</label>
+
+       <select>
+            <option selected disabled>Choose currency</option>
+            <option>USD</option>
+            <option>RWF</option>
+            <option>UG SHILLINGS</option>
+            <option>KENYA SHILLINGS</option>
+            <option>NAIRA</option>
+            
+
+        </select>
+
+    </div>
+</div>
+
+<div class="col-4 col-m-4" >    
+
+            <div class="form-grouping">
+
+        <label for="email">Amount Withdrawed</label>
+
+        <input type="email" name="" placeholder="enter Amount"  required>
+
+    </div>
+</div>
+
+<div class="col-4 col-m-4" >    
+
+            <div class="form-grouping">
+
+        <label for="email">Reason</label>
+
+        <input type="email" name="" placeholder="Ex: School Fees" required>
+
+    </div>
+</div>
+
+<div class="col-12 col-m-8" >    
+
+    
+
+        <button type="submit" class="btn-button-login" name="">Confirm Debit</button>
+
+        <button type="reset" class="btn-button-login-error" >Not Now</button>
+
+</div>
+
+
+
+
+        
+
+    </div>
+
+</div>
+
+
+
+</div>
+
+<div class="footer">
+<p>  copyright &copy; 2020 by Papel. All rights reserved.</p>
+</div>
+
+</body>
+
+
+</html>
